@@ -3,8 +3,8 @@
 РАЗРАБОТКА СИСТЕМЫ МАШИННОГО ОБУЧЕНИЯ.
 
 Отчет по лабораторной работе #3 выполнил(а):
-- Толочко Дмитрий Александрович
-- РИ-210944
+- Довгий Вадим Игоревич
+- РИ-210942
 Отметка о выполнении заданий (заполняется студентом):
 
 | Задание | Выполнение | Баллы |
@@ -42,18 +42,10 @@
 
 ## Задание 1
 ### Реализовать систему машинного обучения в связке Python - Google-Sheets – Unity.
-1) Добавил ML Agent в Юнити
-![image](https://user-images.githubusercontent.com/100460661/197513975-f36b351c-44b2-44c7-a89e-6b36e01ad325.png)
+1) Добавил ML Agent в Юнити, создал объекты на сцене и начал писать команды для активации ML агента
+![2022-11-10_15-50-49](https://user-images.githubusercontent.com/45125347/201104542-78678fa8-9a74-48c2-b943-f71ee5e324b9.png)
 
-2) Написал команды для актитвации нового ML агента и скачал mlagents 0.28.0 и	torch 1.7.1
-![image](https://user-images.githubusercontent.com/100460661/197515760-7601e49c-cc16-4238-ad1e-63edaef2f048.png)
-![image](https://user-images.githubusercontent.com/100460661/197515826-91a36c6e-e3f6-4e81-bbdf-b5e2cd310c91.png)
-
-3) В юнити создал плоскость, куб, сферу и скрипт
-![image](https://user-images.githubusercontent.com/100460661/197518076-adb195ee-25d4-4134-8408-955154f382be.png)
-
-4) Добавил следующий код в скрипт RollerAgent:
-
+2) Написал скрипт для работы с объектом
 ```cs
 using UnityEngine;
 using Unity.MLAgents;
@@ -114,11 +106,11 @@ public class RollerAgent : Agent
     }
 }
 ```
-5) Добавил Decision Requester, Behavior Parameters к объекту сферы
 
-![image](https://user-images.githubusercontent.com/100460661/197522577-30b0dc40-aa5a-4fb8-81bd-821e5dd151c8.png)
+3) Добавил Decision Requester, Behavior Parameters к объекту сферы
+![2022-11-10_16-14-18](https://user-images.githubusercontent.com/45125347/201105031-88c9c44d-29f3-4d0e-80bb-d388bddc12d9.png)
 
-6) Добавил файл конфигурациии нейронной сети с кодом:
+4) Добавил файл конфигурациии нейронной сети с кодом:
 
 ``` yaml
 
@@ -147,28 +139,18 @@ behaviors:
     summary_freq: 10000
 ```
 
-7) Запустил работу Ml агента
-![image](https://user-images.githubusercontent.com/100460661/197527155-a6b76b59-6df6-4883-845f-3c5db8f7022d.png)
-
-8) Запустил проект в юнити
-![image](https://user-images.githubusercontent.com/100460661/197756388-e75ca15d-674a-4d01-99f0-c627be45c4bd.png)
+5) Запустил работу для ML агента и проект в Unity
+![2022-11-10_16-51-57](https://user-images.githubusercontent.com/45125347/201104891-0daf5d91-6133-440d-a676-59d6e88c7527.png)
 
 
-
-https://user-images.githubusercontent.com/100460661/197770964-147749e1-ad14-4d8d-aaea-465d22365b01.mp4
-
-
-
-9) Сделал 3, 9, 27 копий модели «Плоскость-Сфера-Куб»
-![image](https://user-images.githubusercontent.com/100460661/197759587-ad4eedb8-99d1-4333-9f27-dd0ba966b8d6.png)
-![image](https://user-images.githubusercontent.com/100460661/197762780-c00cb136-6d52-4e3d-a148-72f83851cdee.png)
-![image](https://user-images.githubusercontent.com/100460661/197764315-4ea7d9c8-1886-4194-8715-19ec9e2101c7.png)
-
-10) Проверил работу обученной модели
+6) Сделал 27 копий модели «Target Area»
+![2022-11-10_17-00-53](https://user-images.githubusercontent.com/45125347/201105444-5271b395-87f7-4df4-969e-86dd1e9d78d8.png)
 
 
+7) Проверил работу обученной модели
 
-https://user-images.githubusercontent.com/100460661/197770765-67e62ee0-01a7-4bbf-9d40-e68f36f387e0.mp4
+https://user-images.githubusercontent.com/45125347/201105547-96be495a-b8d7-4f7d-9a4f-4d9e3c0bda17.mp4
+
 
 ## Задание 2
 ### Подробно опишите каждую строку файла конфигурации нейронной сети. Самостоятельно найдите информацию о компонентах Decision Requester, Behavior Parameters, добавленных на сфере.
