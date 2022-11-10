@@ -143,7 +143,7 @@ behaviors:
 ![2022-11-10_16-51-57](https://user-images.githubusercontent.com/45125347/201104891-0daf5d91-6133-440d-a676-59d6e88c7527.png)
 
 
-6) Сделал 27 копий модели «Target Area»
+6) Сделал 36 копий модели «Target Area»
 ![2022-11-10_17-00-53](https://user-images.githubusercontent.com/45125347/201105444-5271b395-87f7-4df4-969e-86dd1e9d78d8.png)
 
 
